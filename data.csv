@@ -1,0 +1,343 @@
+"target_grade","assignment_preference","age","gender","university_year","enrolled_unit","weekly_study_hours","work_status","weekly_paid_work_hours","average_daily_sleep","usual_bedtime","weekly_exercise_hours","weekly_food_spend","wam"
+"Distinction","draw up a schedule and work through it in planned stages",23,"F","Fourth year","DATA2002",21,"Part time",24,"7.0",1899-12-31 23:30:00,3,35,70
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",35,"I don't currently work",0,"8 hours",1899-12-31 22:30:00,5,200,58
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",30,"Casual",8,"6-7",1899-12-31,1,100,86.24
+"High Distinction","cram at the last second",27,"M","Second year","DATA2902",5,"I don't currently work",0,"6.0",1899-12-31 01:00:00,3,120,NA
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",12,"Casual",24,"7 hrs",1899-12-31 12:00:00,10,150,80.8
+"High Distinction","do them immediately",21,"M","Second year","DATA2002",6,"Casual",5,"6.0",1899-12-31,7,150,75
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",3,"Casual",3,"8 hours",1899-12-31 03:00:00,4,50,89
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",40,"I don't currently work",0,"9.0",1899-12-31 22:30:00,5,300,77
+"High Distinction","draw up a schedule and work through it in planned stages",23,"F","Third year","DATA2002",30,"Part time",10,"8.0",1899-12-31 21:30:00,20,100,80
+"Credit","cram at the last second",20,"F","Third year","DATA2002",12,"Casual",6,"7-8",1899-12-31 11:00:00,0,20,50
+"High Distinction","do them immediately",20,NA,"Second year","DATA2002",22,"I don't currently work",0,"9 hours",1899-12-31 01:30:00,8,200,92
+"Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",30,"I don't currently work",0,"8.0",1899-12-31 10:30:00,12,100,78.36
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",45,"I don't currently work",0,"8.0",1899-12-31 00:30:00,3,200,85.3
+"High Distinction","do them immediately",23,"F","Second year","DATA2902",30,"Casual",6,"8-9 hours",1899-12-31 21:00:00,2,150,78
+"High Distinction","draw up a schedule and work through it in planned stages",22,"F","Second year","DATA2002",20,"I don't currently work",0,"7.0",1899-12-31 01:00:00,10,200,80
+"High Distinction","cram at the last second",20,"M","Third year","DATA2902",10,"Contractor",5,"6.5",1899-12-31,6,100,75
+"Credit","do them immediately",20,"M","Third year","DATA2002",20,"I don't currently work",0,"7.0",NA,5,20,65
+"Distinction","do them immediately",19,"M","Second year","DATA2902",10,"Part time",3,"6-7",1899-12-31 12:30:00,3,40,80
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",35,"Casual",15,"9.0",1899-12-31 10:15:00,3,40,83.2
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",10,"I don't currently work",0,"8 hours",1899-12-31 20:30:00,3,30,89.5
+"High Distinction","do them immediately",20,"F","Third year","DATA2002",8,"Casual",18,"6.0",1899-12-31 23:30:00,3,100,NA
+"High Distinction","do them immediately",19,"M","Second year","DATA2902",6,"I don't currently work",0,"5.0",1899-12-31 02:00:00,8,25,93
+"Credit","cram at the last second",20,"F","Second year","DATA2002",9,"I don't currently work",2,"5.0",1899-12-31 04:00:00,0,80,60
+"Distinction","do them immediately",21,"M","Fourth year","DATA2902",8,"I don't currently work",0,"7h",1899-12-31,10,100,70
+"High Distinction","do them immediately",18,"F","Third year","DATA2002",40,"I don't currently work",0,NA,1899-12-31 23:00:00,3,NA,88
+"Distinction","do them immediately",20,"M","Second year","DATA2002",12,"Casual",8,"6-7 hrs",1899-12-31 23:00:00,6,200,NA
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",12,"Casual",5,"9.0",1899-12-31,0,7,78
+"Credit","do them immediately",17,"F","Third year","DATA2002",40,"Casual",10,"8 hours",1899-12-31 23:45:00,4,100,70
+"High Distinction","do them immediately",20,"M","Second year","DATA2902",10,"I don't currently work",0,"8.0",1899-12-31 02:00:00,5,50,86.6
+"Distinction","cram at the last second",20,NA,"Third year","DATA2002",10,"Casual",22,"6.0",1899-12-31,1,10,NA
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Third year","DATA2002",15,"I don't currently work",0,"6.0",1899-12-31,4,100,72
+"High Distinction","draw up a schedule and work through it in planned stages",22,"M","Third year",NA,8,"Part time",14,"8.0",1899-12-31 23:00:00,15,100,75
+"Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",6,"I don't currently work",0,"8h",1899-12-31 02:00:00,1.5,500,85
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Fourth year","DATA2002",30,"Casual",7,"7 hours",1899-12-31 00:30:00,4,20,67
+"High Distinction","do them immediately",18,"M","Second year","DATA2902",50,"I don't currently work",0,"7.0",1899-12-31 01:00:00,4,100,94
+"High Distinction","draw up a schedule and work through it in planned stages",18,"M","Second year","DATA2902",49,"I don't currently work",0,"7.0",1899-12-31,2,100,84
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",24,"Casual",10,"6.0",1899-12-31,1,50,86
+"High Distinction","do them immediately",20,"F","Second year","DATA2002",8,"Casual",6,"7h 30min",1899-12-31 23:30:00,2,160,75
+"High Distinction","do them immediately",25,"F","Second year","DATA2902",42,"Self employed",10,"9 hours",1899-12-31 22:00:00,10,NA,88.75
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",15,"Casual",17,"7.0",1899-12-31 01:00:00,8,30,NA
+"High Distinction","draw up a schedule and work through it in planned stages",18,"F","Second year","DATA2002",40,"I don't currently work",0,"5 hrs/day",1899-12-31 02:00:00,14,150,75
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",30,"I don't currently work",0,"9.0",1899-12-31 01:00:00,2,200,78
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",3,"I don't currently work",0,"7 hours",1899-12-31,1,200,70
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",21,"Casual",0,"8 Hours",1899-12-31 01:00:00,7,210,78
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",30,"internship",0,"10.0",1899-12-31 03:00:00,8,300,89
+"High Distinction","do them immediately",23,"F","Fourth year","DATA2902",10,"Part time",15,"4.0",1899-12-31,5,100,85
+"High Distinction","do them immediately",20,"M","Second year","DATA2002",30,"I don't currently work",0,"8.0",1899-12-31,5,150,85
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",25,"Casual",5,"7.0",1899-12-31 02:00:00,5,110,89
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",24,"Part time",22.5,"8 hours",1899-12-31 01:00:00,0,100,84
+"Distinction","draw up a schedule and work through it in planned stages",23,"M","Third year","DATA2902",10,"Part time",24,"8.0",1899-12-31 00:01:00,5,200,70
+"Distinction","draw up a schedule and work through it in planned stages",22,"F","Second year","DATA2002",25,"I don't currently work",0,"8.0",1899-12-31 01:30:00,2,60,NA
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",4,"Part time",20,"8.5 hours",1899-12-31 11:00:00,6,120,88
+"Distinction","do them immediately",19,"F","First year","DATA2902",10,"Part time",7.5,"7.5",1899-12-31 11:50:00,2,250,85.5
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","First year","DATA2002",80,"I don't currently work",0,"8.0",1899-12-31 03:00:00,10,100,93
+"High Distinction","do them immediately",21,"F","Second year","DATA2002",25,"I don't currently work",0,"8.0",1899-12-31 02:30:00,4,400,81
+"Distinction","do them immediately",18,"M","Second year","DATA2002",36,"I don't currently work",0,"8.0",1899-12-31 01:30:00,0,10,85
+"Credit","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",40,"Part time",3,"8.0",1899-12-31 12:00:00,5,300,70
+"High Distinction","cram at the last second",19,"M","Second year","DATA2902",30,"Self employed",2.5,"8.0",1899-12-31 02:00:00,3,10,82
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2902",40,"I don't currently work",0,"8.0",1899-12-31 07:30:00,5,100,87
+"High Distinction","draw up a schedule and work through it in planned stages",21,NA,"Second year","DATA2002",19,"I don't currently work",0,"8 hours",1899-12-31 03:00:00,0,280,73.5
+"Distinction","draw up a schedule and work through it in planned stages",22,"M","Fourth year","DATA2002",10,"Part time",0,"9.0",1899-12-31 12:00:00,1,500,71
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2902",14,"Self employed",2,"8.0",1899-12-31 22:30:00,3,100,75
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",40,"Casual",2,"6-7 hours",1899-12-31 02:00:00,20,20,80.3
+"Credit","draw up a schedule and work through it in planned stages",20,NA,"Third year","DATA2002",1,"Part time",20,"3-5 hours",1899-12-31,20,0,65
+"High Distinction","do them immediately",38,"M","Third year","DATA2002",15,"I don't currently work",0,"8.0",1899-12-31 12:00:00,7,400,3.7
+"High Distinction","do them immediately",20,"M","Second year","DATA2002",30,"I don't currently work",0,"7.0",1899-12-31,10,30,80
+"High Distinction","cram at the last second",19,"M","Second year","DATA2002",20,"Part time",25,"7.0",1899-12-31 11:30:00,1,80,83
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2902",15,"Casual",20,"7.0",1899-12-31,8,20,83
+"High Distinction","draw up a schedule and work through it in planned stages",18,"M","Second year","DATA2902",30,"Part time",12,"6.5-7 hours",1899-12-31 23:00:00,5,100,88
+"High Distinction","draw up a schedule and work through it in planned stages",24,"M","Third year","DATA2002",10,"I don't currently work",0,"7.5 hours",1899-12-31 01:00:00,5,70,75
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",2,"I don't currently work",0,"2.0",1899-12-31 23:30:00,3,170,68
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",28,"I don't currently work",0,"7.0",1899-12-31 23:30:00,3.5,150,84
+"High Distinction","draw up a schedule and work through it in planned stages",18,"F","Second year","DATA2902",30,"I don't currently work",0,"8 hours",1899-12-31 01:00:00,4,250,93
+"High Distinction","draw up a schedule and work through it in planned stages",25,"M","Second year","DATA2002",20,"Casual",16,"7.0",1899-12-31 23:00:00,3,100,0
+"High Distinction","cram at the last second",19,"M","Second year","DATA2902",15,"Self employed",15,"7.0",1899-12-31 00:30:00,10,150,84
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",20,"I don't currently work",0,"5 hours",1899-12-31 01:00:00,10,80,73
+"High Distinction","do them immediately",20,"F","Second year","DATA2002",20,"Casual",6,"8.0",1899-12-31 23:50:00,1,5,78.5
+"Credit","draw up a schedule and work through it in planned stages",22,"M","Second year","DATA2002",7,"I don't currently work",0,"7.0",1899-12-31 02:00:00,4,300,75
+"High Distinction","cram at the last second",23,"M","Third year","DATA2002",8,"I don't currently work",NA,"7hours",1899-12-31 02:00:00,4,160,NA
+"High Distinction","cram at the last second",20,"F","Second year","DATA2002",30,"I don't currently work",0,"9.0",1899-12-31 23:00:00,3,300,87
+"High Distinction","cram at the last second",21,"M","Second year","DATA2002",10,"I don't currently work",0,"7.0",1899-12-31 06:00:00,2,200,85
+"High Distinction","do them immediately",20,"F","Second year","DATA2902",60,"Casual",3,"8.0",1899-12-31 00:30:00,30,200,86
+"High Distinction","cram at the last second",19,"Others","First year","DATA2002",170,"Part time",3,"25.0",1899-12-31 00:59:00,169,500,81
+"Credit","cram at the last second",21,"M","Second year","DATA2002",12,"I don't currently work",NA,"6 hours",1899-12-31,0,280,NA
+"Distinction","cram at the last second",24,"M","Third year","DATA2902",10,"I don't currently work",0,NA,1899-12-31 23:00:00,5,150,68.6
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2902",35,"I don't currently work",0,"7-8 hours",1899-12-31 10:00:00,5,10,76
+"Distinction","draw up a schedule and work through it in planned stages",22,"M","Third year","DATA2002",7,"I don't currently work",0,"7 1/2 hours",1899-12-31 22:00:00,20,70,65
+"High Distinction","do them immediately",21,"M","Third year","DATA2002",35,"Casual",10,"7.0",1899-12-31 02:00:00,7,250,86
+"Distinction","do them immediately",19,"M","Second year","DATA2902",5,"I don't currently work",0,"7.0",1899-12-31 02:00:00,6,250,NA
+"High Distinction","cram at the last second",20,"F","Third year","DATA2002",30,"I don't currently work",0,"8hours",1899-12-31 00:30:00,2,200,75
+"High Distinction","cram at the last second",20,"M","Third year","DATA2002",3,"I don't currently work",0,"7 hours",1899-12-31 04:00:00,10,200,76
+"Distinction","do them immediately",22,"F","Second year",NA,21,"Self employed",35,"6.0",1899-12-31 01:20:00,14,700,85
+"High Distinction","do them immediately",20,"F","Second year","DATA2002",24,"Casual",5,"8.0",1899-12-31 10:30:00,9,300,87
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",25,"I don't currently work",0,"6.0",1899-12-31 12:00:00,0,300,72
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",24,"I don't currently work",0,"8.0",1899-12-31 01:00:00,10,NA,NA
+"High Distinction","do them immediately",19,"Others","Second year","DATA2902",6,"Casual",2,"8.0",1899-12-31 00:30:00,4,110,90.6
+"Distinction","do them immediately",20,"M","Second year","DATA2002",12,"Part time",0,"10.0",1899-12-31 02:00:00,6,400,78
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",80,"I don't currently work",0,NA,1899-12-31 01:00:00,5,100,NA
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",30,"I don't currently work",NA,"9h",1899-12-31,3.5,130,82
+"High Distinction","cram at the last second",19,"F","Second year","DATA2902",28,"I don't currently work",2,"6 hours",1899-12-31 02:00:00,2,50,87.75
+"Pass","cram at the last second",22,"M","Third year","DATA2002",10,"I don't currently work",0,"6.0",1899-12-31 02:00:00,0,140,72
+"Credit","do them immediately",20,"F","Second year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31 00:30:00,4,100,70
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",20,"Part time",16,"8.0",1899-12-31 23:00:00,3,60,79
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",10,"Casual",18,"8.0",1899-12-31 11:00:00,5,30,86
+"Distinction","do them immediately",21,"M","Third year","DATA2002",10,"Part time",10,"8.0",1899-12-31 23:00:00,1,50,65
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",40,"I don't currently work",0,"7.0",1899-12-31 02:00:00,8,300,75
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",30,"Casual",10,"8hr",1899-12-31 02:00:00,3,100,65
+"Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2002",28,"I don't currently work",16,"6.5 hours",1899-12-31 02:00:00,7,300,70
+"High Distinction","do them immediately",21,"M","Fourth year","DATA2902",20,"Casual",20,"7.0",1899-12-31 01:00:00,12,15,78
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",30,"I don't currently work",0,"7.0",1899-12-31 23:00:00,3,500,75
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31 02:00:00,4,300,79
+"Credit","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",30,"Casual",10,"9.0",1899-12-31 01:00:00,21,400,70
+"High Distinction","do them immediately",21,"F","Third year","DATA2002",36,"I don't currently work",0,"8 hours",1899-12-31 11:30:00,8,300,83
+"High Distinction","do them immediately",26,"M","Second year","DATA2902",10,"Part time",30,"7 hours",1899-12-31 23:00:00,3,200,87
+"High Distinction","do them immediately",19,"F","Second year","DATA2002",28,"Part time",6,"8.0",1899-12-31 12:00:00,2,5,NA
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","First year","DATA2902",12,"Casual",7,"5.0",1899-12-31 12:00:00,3,85,76.3
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",2,"I don't currently work",0,"8.0",1899-12-31 11:00:00,2,80,86
+"High Distinction","draw up a schedule and work through it in planned stages",18,"M","First year","DATA2002",20,"I don't currently work",0,"7.0",1899-12-31 01:00:00,2,500,78
+"High Distinction","do them immediately",19,"F","Second year","DATA2002",1,"I don't currently work",NA,"6h30m",1899-12-31 02:00:00,1,150,NA
+"Distinction","cram at the last second",21,"F","Third year","DATA2002",23,"I don't currently work",0,"8 hrs",1899-12-31 01:00:00,6,100,60
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",25,"I don't currently work",0,"8.0",1899-12-31 01:00:00,4,180,83.625
+"High Distinction","cram at the last second",20,"M","Second year","DATA2902",5,"I don't currently work",0,"7.0",1899-12-31 03:00:00,10,142.26,86.7
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",4,"I don't currently work",0,"8.0",1899-12-31 22:50:00,6,30,76
+"Pass","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",3,"Self employed",6,"7.0",1899-12-31 02:30:00,2,15,70
+"High Distinction","cram at the last second",24,"M","Fourth year","DATA2002",30,"I don't currently work",0,"9 hours",1899-12-31 23:00:00,0,200,70
+"High Distinction","cram at the last second",20,"F","First year","DATA2902",25,"I don't currently work",0,"9.0",1899-12-31 11:00:00,0,100,96
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",6,"Part time",10,"7.0",1899-12-31 02:30:00,4,250,81
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",4,"I don't currently work",0,"7.0",1899-12-31 01:00:00,3,180,NA
+"High Distinction","cram at the last second",21,"M","Third year","DATA2002",40,"Contractor",10,"7.0",1899-12-31,4,100,73
+"Distinction","cram at the last second",21,"M","Second year","DATA2902",4,"Casual",18,"6.5",1899-12-31,4,NA,NA
+"Distinction","cram at the last second",20,"M","Second year","DATA2002",24,"I don't currently work",0,"8.0",1899-12-31 05:00:00,0,200,70
+"High Distinction","do them immediately",22,"M","Third year","DATA2002",20,"I don't currently work",0,"10.0",1899-12-31 07:00:00,3,250,87
+"High Distinction","do them immediately",25,"M","Second year","DATA2902",30,"Casual",15,"8.0",1899-12-31 22:30:00,2,50,83
+"High Distinction","do them immediately",20,"M","Second year","DATA2902",40,"I don't currently work",0,"8.0",1899-12-31 12:00:00,0.5,50,89
+"High Distinction","do them immediately",20,"F","Third year","DATA2002",40,"I don't currently work",0,"7.0",1899-12-31 22:00:00,0,100,88.5
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",15,"Part time",24,"7.0",1899-12-31 12:30:00,7,250,75
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",40,"Finance Trading",0,"8.0",1899-12-31 12:30:00,5,150,75
+"Distinction","draw up a schedule and work through it in planned stages",25,"M","First year","DATA2002",10,"Full time",45,"7.0",1899-12-31 23:00:00,4,400,76
+"High Distinction","do them immediately",20,"M","Third year","DATA2002",28,"I don't currently work",0,"8.0",1899-12-31,5,150,93
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2002",16,"Part time",16,"8.0",1899-12-31 22:00:00,6,100,NA
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",5,"Self employed",4,"7.0",1899-12-31 01:00:00,4,80,80
+"Credit","do them immediately",20,"M","Second year","DATA2002",14,"I don't currently work",2,"4.0",1899-12-31 02:00:00,4,350,10
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",15,"Casual",16,"8 hrs",1899-12-31 09:30:00,7,150,85
+"High Distinction","draw up a schedule and work through it in planned stages",23,"M","Fifth or higher year","DATA2002",10,"I don't currently work",0,"7.0",1899-12-31 00:30:00,1,200,80
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",60,"Part time",12,"7.5",1899-12-31 11:30:00,12,400,80
+"Distinction","cram at the last second",21,"F","Third year","DATA2002",10,"Casual",15,"7.0",1899-12-31,2,120,79
+"Distinction","cram at the last second",20,"F","Third year","DATA2002",10,"I don't currently work",0,"7.0",1899-12-31 11:00:00,4,300,94
+"Pass","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",10,"I don't currently work",0,"9.0",1899-12-31 11:00:00,7,300,95
+"Pass","cram at the last second",20,"F","Third year","DATA2002",10,"I don't currently work",1,"9.0",1899-12-31 23:00:00,2,50,98
+"Distinction","cram at the last second",20,"M","Second year","DATA2002",40,"I don't currently work",0,"10 per day",1899-12-31 02:00:00,3,500,60
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",36,"Contractor",2,"7.0",1899-12-31 23:30:00,9,210,70
+"Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2902",2,"Casual",20,"5.0",1899-12-31 03:00:00,1,80,65
+"Pass","do them immediately",21,"M","First year","DATA2002",10,"I don't currently work",0,"5.0",1899-12-31 03:00:00,2,150,70
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",45,"Casual",0,"8.0",1899-12-31 22:15:00,6,10,81.8
+"Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",15,"Casual",15,"8 hours",1899-12-31 01:00:00,4,150,86.2
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",3,"I don't currently work",0,"9.0",1899-12-31 03:00:00,8,80,75
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",6,"I don't currently work",0,"8.0",1899-12-31 01:00:00,1,200,70
+"High Distinction","do them immediately",20,"M","Second year","DATA2902",15,"I don't currently work",0,"Eight Hours",1899-12-31 10:30:00,10,60,81
+"High Distinction","cram at the last second",21,"M","Second year","DATA2002",30,"Casual",32,"6 hours",1899-12-31 01:00:00,0,200,75
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",50,"I don't currently work",0,"6 hours",1899-12-31 01:00:00,4,150,80
+"Credit","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",2,"I don't currently work",0,"9.0",1899-12-31,8,60,70.5
+"Distinction","draw up a schedule and work through it in planned stages",24,"M","First year","DATA2002",5,"Part time",20,"8.0",1899-12-31,3,100,65
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",20,"I don't currently work",0,"6.0",1899-12-31 00:30:00,1,200,80
+"High Distinction","do them immediately",21,"M","Second year","DATA2002",48,"Volunteer",0,"6.0",1899-12-31 19:00:00,2,100,76
+"High Distinction","draw up a schedule and work through it in planned stages",22,"M","Third year","DATA2002",25,"I don't currently work",0,NA,1899-12-31 12:00:00,5,50,65
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",30,"I don't currently work",0,"6.0",1899-12-31 02:00:00,3,50,55
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",20,"I don't currently work",0,"8 hours",1899-12-31 23:00:00,5,50,58
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",15,"Full time",45,"6.0",1899-12-31 22:00:00,10,50,89
+"Distinction","do them immediately",23,"M","Third year","DATA2002",24,"Part time",24,"9 hours",1899-12-31 22:00:00,1,150,64
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Third year","DATA2002",12,"Part time",23,"8.5",1899-12-31 10:30:00,3,250,21.7
+"High Distinction","cram at the last second",20,"F","Third year","DATA2002",20,"Casual",14,"8.0",1899-12-31 12:30:00,1,80,78
+"High Distinction","cram at the last second",20,"M","Second year","DATA2002",15,"Part time",0,"8.5",1899-12-31,12,350,77
+"High Distinction","cram at the last second",20,"F","Second year","DATA2002",15,"Part time",14,"10.0",1899-12-31 12:00:00,4,50,77.5
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",42,"I don't currently work",0,"9.0",1899-12-31 11:30:00,7,50,NA
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",20,"Part time",9,"7 hours",1899-12-31 21:00:00,5,50,84
+"Distinction","cram at the last second",20,"M","Second year","DATA2002",5,"Part time",15,"7.0",1899-12-31,4,30,73
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",9,"Part time",15,"7.0",1899-12-31 12:00:00,4,30,74.9
+"High Distinction","draw up a schedule and work through it in planned stages",12,"M","Fifth or higher year","DATA2902",2,"casual",170,"7.0",1899-12-31 11:00:00,2,50,84
+"Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",10,"Part time",5,"8.0",1899-12-31 01:00:00,5,200,73
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",2,"Casual",20,"8.0",1899-12-31 22:00:00,12,50,78
+"Distinction","cram at the last second",23,"F","Second year","DATA2002",2,"Casual",25,"7hours",1899-12-31,6,300,78
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",10,"Casual",13,"6.0",1899-12-31 01:00:00,10,150,70
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",35,"Part time",16,"8 hours",1899-12-31 23:00:00,6,150,79
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",4,"Casual",3,"8.0",1899-12-31 23:00:00,6,70,85
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",9,"Part time",9,"10 hours",1899-12-31 20:30:00,5,100,82.7
+"Distinction","cram at the last second",21,"F","First year","DATA2002",20,"I don't currently work",0,"7.0",1899-12-31 03:00:00,2,200,65
+"High Distinction","cram at the last second",19,"M","Second year","DATA2902",20,"Casual",13,"7 hours",1899-12-31 01:00:00,2,50,85
+"Credit","do them immediately",18,"F","Second year","DATA2902",35,"Casual",15,"9 hours",1899-12-31 22:30:00,4,50,70
+"High Distinction","cram at the last second",20,"F","Third year","DATA2902",15,"I don't currently work",0,"8.0",1899-12-31,3,85,89
+"High Distinction","do them immediately",19,"M","Third year","DATA2902",12,"I don't currently work",0,"7.0",1899-12-31,7,500,80
+"High Distinction","cram at the last second",20,"M","Second year","DATA2902",25,"Part time",20,"7.0",1899-12-31 12:00:00,5,200,76
+"Credit","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",8,"Casual",12,"8.0",1899-12-31 10:00:00,8,100,70
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",15,"Casual",10,"7 hrs",1899-12-31 23:30:00,5,100,70
+"Distinction","cram at the last second",20,"F","Third year","DATA2002",7,"Part time",4,"7 hours",1899-12-31,7,50,NA
+"High Distinction","cram at the last second",19,"M","Second year","DATA2902",15,"Casual",14,"5 hours",1899-12-31,15,200,80
+"Distinction","do them immediately",20,"M","Third year","DATA2002",12,"Casual",8,"7.0",1899-12-31,4,100,NA
+"Distinction","do them immediately",19,"M","Second year","DATA2002",5,"Part time",4,"5.0",1899-12-31,7,100,NA
+"Distinction","cram at the last second",21,"M","Second year","DATA2002",48,"I don't currently work",0,"8.0",1899-12-31 02:00:00,10,1000,76
+"Distinction","do them immediately",20,"F","Third year","DATA2002",25,"Casual",16,"8.0",1899-12-31 22:45:00,5,150,76.5
+"High Distinction","do them immediately",20,"M","Second year","DATA2902",30,"Casual",4,"8.0",1899-12-31,6,100,74
+"High Distinction","draw up a schedule and work through it in planned stages",18,"F","Second year","DATA2902",25,"I don't currently work",0,"6.0",1899-12-31 02:00:00,4,300,76
+"High Distinction","do them immediately",19,"M","First year","DATA2902",24,"Self employed",0,"10.0",1899-12-31 23:50:00,10,500,4
+"High Distinction","cram at the last second",20,"M","Second year","DATA2902",10,"Casual",2,"8.0",1899-12-31 23:00:00,3,120,NA
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2902",20,"I don't currently work",0,"8-9",1899-12-31,10,500,83.9
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",36,"Part time",20,"7.0",1899-12-31 01:00:00,0,150,78
+"Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2902",8,"I don't currently work",0,"7.0",1899-12-31 11:00:00,2,100,NA
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",15,"Contractor",10,"8.0",1899-12-31,2,300,90
+"Distinction","draw up a schedule and work through it in planned stages",23,"M","Third year","DATA2002",6,"I don't currently work",0,"8.0",1899-12-31 23:00:00,3,150,55
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",42,"Casual",10,"7hours",1899-12-31 12:00:00,4,140,70
+"Distinction","cram at the last second",20,"M","Third year","DATA2002",12,"I don't currently work",6,"7.0",1899-12-31 01:30:00,6,300,65
+"Distinction","do them immediately",22,"M","Fourth year","DATA2002",0,"Part time",20,"6 hours",1899-12-31 04:00:00,12,150,79
+"High Distinction","cram at the last second",21,"F","Fourth year","DATA2902",3,"Contractor",1.5,"6.0",1899-12-31 04:00:00,1,150,77
+"Credit","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",15,"I don't currently work",0,"7+",1899-12-31 01:00:00,10,300,65
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2002",30,"Casual",6,"7 hours",1899-12-31 01:00:00,10,300,90
+"Distinction","do them immediately",21,"M","Second year","DATA2002",25,"I don't currently work",0,"6.0",1899-12-31 23:30:00,7,250,66
+"High Distinction","do them immediately",21,"M","First year","DATA2002",20,"I don't currently work",0,"8h",1899-12-31 11:00:00,5,500,86
+"High Distinction","cram at the last second",20,"M","Second year","DATA2002",15,"I don't currently work",0,"7.0",1899-12-31 01:30:00,1,70,88
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",10,"Casual",NA,"7.5 hrs",1899-12-31 12:45:00,4,60,81
+"Credit","cram at the last second",18,NA,"First year","DATA2002",4,"I don't currently work",0,"8 Hours",1899-12-31 10:30:00,0.5,100,NA
+"Distinction","do them immediately",19,"M","First year","DATA2002",20,"I don't currently work",0,"8hour",1899-12-31 12:00:00,10,300,70
+"High Distinction","do them immediately",21,"M","Third year","DATA2002",6,"Casual",NA,"6 hours",1899-12-31 02:00:00,8,NA,NA
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",42,"I don't currently work",2,"8h",1899-12-31 01:00:00,1,200,72
+"Distinction","draw up a schedule and work through it in planned stages",30,"M","Second year","DATA2002",24,"Casual",15,"6.0",1899-12-31 23:00:00,15,200,80
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",30,"Part time",28,"8.0",1899-12-31 23:45:00,18,300,80
+"Pass","draw up a schedule and work through it in planned stages",23,"M","Second year","DATA2002",12,"Part time",3,"7 hour per days",1899-12-31 02:00:00,5,400,NA
+"High Distinction","do them immediately",21,"M","Second year","DATA2002",12,"I don't currently work",0,"7.0",1899-12-31 11:00:00,3,200,NA
+"High Distinction","do them immediately",19,"F","Second year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31 12:00:00,7,200,85
+"Pass","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",10,"Part time",6,"8hours",1899-12-31 01:00:00,3,249,60
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","First year","DATA2002",7,"I don't currently work",0,"7.0",1899-12-31 01:00:00,0,100,80
+"Pass","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",10,"I don't currently work",0,"10h",1899-12-31 01:00:00,6,500,NA
+"Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",14,"I don't currently work",0,"6.5",1899-12-31 00:30:00,14,20,65
+"High Distinction","do them immediately",21,NA,"Fourth year","DATA2902",30,"I don't currently work",0,"9.0",1899-12-31,4,100,59
+"Distinction","cram at the last second",20,"F","Second year","DATA2002",8,"I don't currently work",0,"10hrs",1899-12-31 02:00:00,0,50,72
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",10,"Part time",24,"7.0",1899-12-31,5,30,65
+"High Distinction","cram at the last second",19,"M","Second year","DATA2002",3,"Part time",30,"6.0",1899-12-31 03:00:00,3,40,87
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",30,"I don't currently work",0,"6.0",1899-12-31 01:00:00,3,50,80
+"Credit","draw up a schedule and work through it in planned stages",21,"F","Fourth year","DATA2002",6,"Casual",5,"8 hr",1899-12-31 10:30:00,4,50,NA
+"Pass","cram at the last second",20,"M","Second year","DATA2002",15,"I don't currently work",0,"9.0",1899-12-31 04:00:00,0,10,6.25
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",10,"I don't currently work",0,"7.0",1899-12-31 04:00:00,7,60,8
+"High Distinction","draw up a schedule and work through it in planned stages",24,"F","Second year","DATA2002",20,"Full time",0,"8.0",1899-12-31 12:00:00,10,300,70
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Second year","DATA2002",9,"I don't currently work",0,"6.0",1899-12-31,5,300,75
+"Distinction","cram at the last second",19,"M","Second year","DATA2002",2,"Casual",23,"4 hours",1899-12-31 02:00:00,5,250,66.4
+"Distinction","draw up a schedule and work through it in planned stages",25,"M","Third year","DATA2002",7,"I don't currently work",0,"7-8",1899-12-31 03:30:00,2,500,65
+"Pass","cram at the last second",19,NA,"Second year","DATA2002",10,"I don't currently work",0,"10.0",1899-12-31 03:00:00,2,50,60
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Second year","DATA2002",30,"I don't currently work",0,"8h",1899-12-31 01:30:00,3,30,1.8
+"Distinction","do them immediately",23,"M","Second year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31,12,100,73
+"High Distinction","do them immediately",19,"F","Second year","DATA2002",7,"Part time",6,"8hrs",1899-12-31 23:30:00,NA,15,NA
+"High Distinction","cram at the last second",19,"F","Second year","DATA2002",28,"I don't currently work",0,"7.0",1899-12-31 12:00:00,4,100,NA
+"Credit","cram at the last second",20,"M","Second year","DATA2002",7,"I don't currently work",0,"6.0",1899-12-31 23:11:00,2,60,71
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2902",20,"Part time",15,"8.0",1899-12-31,6,180,88
+"Distinction","cram at the last second",20,"F","Second year","DATA2002",20,"Part time",0,"6.0",1899-12-31 01:00:00,0,100,88
+"Credit","cram at the last second",19,"M","First year","DATA2002",24,"Casual",0.5,"8.0",1899-12-31 02:00:00,7,320,0
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",0,"I don't currently work",0,"10.0",1899-12-31 00:15:00,0.2,1000,68
+"Credit","do them immediately",20,"M","Second year","DATA2002",15,"I don't currently work",0,"8.0",1899-12-31 01:00:00,5,700,63.5
+"Distinction","do them immediately",21,"F","Third year","DATA2002",30,"I don't currently work",0,"8.0",1899-12-31 23:00:00,10,200,80
+"High Distinction","cram at the last second",20,"M","Second year","DATA2902",10,"Casual",10,"7.0",1899-12-31 00:30:00,8,150,87
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2902",31,"I don't currently work",0,"7 hours",1899-12-31 23:40:00,4,170,81.5
+"High Distinction","do them immediately",28,"M","Second year","DATA2902",40,"Casual",7,"7+",1899-12-31 10:50:00,6,2000,80
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",20,"Casual",10,"6.0",1899-12-31 01:00:00,1,200,81
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",10,"I don't currently work",0,"7 hours",1899-12-31 02:30:00,7,100,75
+"Pass","cram at the last second",21,"M","Second year","DATA2002",7,"I don't currently work",0,"8 hours",1899-12-31 08:00:00,4,800,63
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Third year","DATA2002",18,"I don't currently work",0,"8.0",1899-12-31 01:30:00,8,100,73
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",40,"I don't currently work",0,"8.0",1899-12-31 12:00:00,7,300,75
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","First year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31,5,150,67
+"High Distinction","draw up a schedule and work through it in planned stages",22,"M","Second year","DATA2002",20,"I don't currently work",0,"6.0",1899-12-31 02:00:00,5,10,73
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","First year","DATA2002",2,"I don't currently work",0,"8.0",1899-12-31,5,150,68
+"Credit","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31 03:00:00,4,150,73.3
+"Credit","cram at the last second",20,"F","First year","DATA2002",8,"Casual",1,"8h",1899-12-31 11:30:00,3,400,66
+"Credit","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",10,"Casual",0,"10h",1899-12-31 04:00:00,3,500,65
+"Credit","draw up a schedule and work through it in planned stages",23,"M","Fourth year","DATA2002",21,"Contractor",12,"6 hr",1899-12-31 22:10:00,6,410,68
+"High Distinction","draw up a schedule and work through it in planned stages",25,"M","Fifth or higher year","DATA2902",2,"Casual",4,"28800 seconds",1899-12-31,5,50,85
+"Distinction","do them immediately",22,"M","Second year","DATA2002",30,"I don't currently work",0,"6h",1899-12-31 12:00:00,1,50,68
+"High Distinction","do them immediately",20,"M","First year","DATA2002",10,"I don't currently work",0,"7.0",1899-12-31,10,200,75
+"High Distinction","do them immediately",21,"F","Third year","DATA2002",30,"Casual",22,"7.5",1899-12-31,4,200,70
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",12,"Casual",12,"7.0",1899-12-31 01:00:00,5,20,70
+"Distinction","draw up a schedule and work through it in planned stages",20,NA,"Second year","DATA2002",30,"I don't currently work",0,"8 hours",1899-12-31 10:30:00,5,60,69.8
+"High Distinction","cram at the last second",19,"F","First year","DATA2002",15,"I don't currently work",NA,"9.0",1899-12-31 12:00:00,3,100,70
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",2,"Full time",40,"5 hours",1899-12-31 04:00:00,12,20,76.95
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",10,"I don't currently work",0,"6 hours",1899-12-31 23:00:00,6,70,76
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2002",20,"Part time",14,"6.0",1899-12-31 01:00:00,5,500,80
+"High Distinction","do them immediately",19,"M","Second year","DATA2002",10,"Casual",25,"7.0",1899-12-31 00:30:00,1,65,81.5
+"Credit","cram at the last second",19,"M","Second year","DATA2002",4,"Casual",14,"8.0",1899-12-31 02:00:00,0,80,80
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",25,"Part time",20,"8h",1899-12-31 01:00:00,5,120,72
+"Distinction","do them immediately",19,"M","First year","DATA2002",9,"I don't currently work",0,"7hrs",1899-12-31 01:00:00,7.7,50,0
+"High Distinction","do them immediately",20,"M","Fourth year","DATA2002",20,"I don't currently work",0,"8.0",1899-12-31,2,150,NA
+"Distinction","draw up a schedule and work through it in planned stages",31,"M","First year","DATA2002",3,"Part time",20,NA,1899-12-31 11:00:00,3,175,76
+"High Distinction","do them immediately",20,"F","First year","DATA2002",20,"I don't currently work",0,"7h",1899-12-31 23:40:00,3,150,75
+"Pass","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",30,"I don't currently work",0,"8 hours",1899-12-31 11:30:00,0,1000,68
+"Distinction","cram at the last second",20,"M","Third year","DATA2002",15,"Part time",15,"7.0",1899-12-31 11:30:00,10,150,70
+"Distinction","draw up a schedule and work through it in planned stages",20,"F","Third year","DATA2902",6,"Self employed",2,"5 hours",1899-12-31 02:00:00,0,30,76.3
+"High Distinction","do them immediately",19,"M","Second year","DATA2902",80,"Part time",10,"5 hours",1899-12-31 22:00:00,5,200,85
+"High Distinction","draw up a schedule and work through it in planned stages",20,"M","Third year","DATA2902",0.5,"I don't currently work",NA,"7.0",1899-12-31 02:00:00,5,150,75
+"Credit","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",30,"I don't currently work",0,"5.0",1899-12-31 03:25:00,2,300,63
+"Credit","cram at the last second",20,"F","First year","DATA2002",14,"Part time",4,"5h",1899-12-31 04:00:00,8,100,66
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",35,"I don't currently work",0,"7.0",1899-12-31,1,105,NA
+"Distinction","cram at the last second",21,"M","Second year","DATA2002",8,"I don't currently work",0,"8 hours",1899-12-31 01:00:00,0,400,70
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",18,"I don't currently work",10,"9h",1899-12-31 08:00:00,3.5,400,65
+"Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2002",40,"I don't currently work",0,"7.0",1899-12-31 23:59:00,5,50,68
+"Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2002",28,"I don't currently work",0,"10.0",1899-12-31 23:00:00,2,600,76
+"High Distinction","draw up a schedule and work through it in planned stages",19,NA,"Second year","DATA2002",40,"Casual",8,"7.5",1899-12-31 23:30:00,4.5,70,76.4
+"Credit","cram at the last second",20,"M","Third year","DATA2002",4,"Casual",15,"7.0",1899-12-31,2,200,70
+"High Distinction","cram at the last second",20,"F","Second year","DATA2902",10,"I don't currently work",0,"8 hours",1899-12-31 23:00:00,4,30,78
+"Credit","draw up a schedule and work through it in planned stages",20,"F","Second year","DATA2002",10,"I don't currently work",0,"8h",1899-12-31 02:00:00,2,350,59
+"High Distinction","cram at the last second",22,"M","First year","DATA2002",20,"I don't currently work",0,"8 hours",1899-12-31 01:00:00,3,100,79
+"High Distinction","draw up a schedule and work through it in planned stages",23,"F","Second year","DATA2002",40,"I don't currently work",NA,"7 hours",1899-12-31 23:00:00,2,300,87
+"Distinction","draw up a schedule and work through it in planned stages",18,"F","Second year","DATA2002",12,"I don't currently work",0,"8.0",1899-12-31 12:00:00,5,100,65
+"Distinction","draw up a schedule and work through it in planned stages",18,"M","Second year","DATA2002",12,"Casual",15,"6-7",1899-12-31 02:00:00,0,100,65
+"High Distinction","draw up a schedule and work through it in planned stages",25,"M","Third year","DATA2002",40,"I don't currently work",0,"7h",1899-12-31 22:30:00,10,0,60
+"Distinction","cram at the last second",24,"M","Third year","DATA2002",12,"Casual",0,"7 hours",1899-12-31 00:30:00,1,150,50
+"Distinction","cram at the last second",21,"M","Third year","DATA2002",3,"Casual",12,"6 hours",1899-12-31 01:00:00,8,300,80
+"High Distinction","draw up a schedule and work through it in planned stages",21,"M","Fourth year","DATA2002",10,"I don't currently work",0,"8.0",1899-12-31 12:00:00,7,400,77.96
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Third year","DATA2002",36,"I don't currently work",0,"7.0",1899-12-31 23:59:00,3,500,74.3
+"High Distinction","do them immediately",25,NA,"First year","DATA2002",20,"I don't currently work",NA,"6.0",NA,NA,NA,NA
+"High Distinction","draw up a schedule and work through it in planned stages",23,"F","First year","DATA2902",5,"Full time",38,"5.0",1899-12-31 11:00:00,4,300,83
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",35,"I don't currently work",0,"8.0",1899-12-31,5,100,8
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2902",20,"Casual",9,"7hrs",1899-12-31 00:30:00,7,70,81
+"High Distinction","draw up a schedule and work through it in planned stages",20,"F","First year","DATA2002",6,"Casual",30,"6.0",1899-12-31 12:00:00,6,100,92
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Fourth year","DATA2002",20,"Casual",20,"7.5hr",1899-12-31 11:30:00,5,80,80.07
+"Distinction","cram at the last second",20,"M","Second year","DATA2002",40,"Casual",12,"6.0",1899-12-31 12:00:00,3,450,82
+"Distinction","cram at the last second",19,"M","Second year","DATA2002",10,"Casual",6,"8 hours",1899-12-31,5,35,NA
+"High Distinction","draw up a schedule and work through it in planned stages",22,"F","Fourth year","DATA2002",35,"I don't currently work",0,"8.0",1899-12-31 23:00:00,7,70,65
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","First year","DATA2002",15,"I don't currently work",0,"7.0",1899-12-31,2,300,85.75
+"High Distinction","do them immediately",20,"F","Second year","DATA2002",20,"I don't currently work",0,"7.0",1899-12-31 01:00:00,5,400,84.5
+"Credit","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",25,"I don't currently work",5,"7 h",1899-12-31 12:43:00,1,300,65
+"Distinction","cram at the last second",19,"M","Second year","DATA2002",18,"Casual",10,"6.5",1899-12-31 03:30:00,2,400,65
+"Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2002",15,"Part time",15,"6.0",1899-12-31 01:00:00,16,100,67
+"Distinction","draw up a schedule and work through it in planned stages",21,"M","Third year","DATA2002",3,"I don't currently work",48,"7.0",1899-12-31 02:00:00,4,150,71
+"High Distinction","draw up a schedule and work through it in planned stages",22,"F","Third year","DATA2002",42,"I don't currently work",0,"8.0",1899-12-31 23:00:00,6,427,73
+"High Distinction","do them immediately",21,"M","Second year","DATA2002",7,"I don't currently work",0,"8.0",1899-12-31 01:30:00,4,120,72
+"High Distinction","draw up a schedule and work through it in planned stages",19,"M","Second year","DATA2902",20,"Casual",20,"7 hours",1899-12-31 23:30:00,8,100,80
+"Distinction","cram at the last second",24,"M","Second year","DATA2002",3,"Casual",16,"8.0",1899-12-31 11:30:00,20,100,79
+"Distinction","draw up a schedule and work through it in planned stages",19,"Others","Second year","DATA2002",20,"I don't currently work",0,"6 hours",1899-12-31 03:00:00,3,150,75
+"High Distinction","do them immediately",19,"M","First year","DATA2902",10,"Casual",2,"7.0",1899-12-31 02:00:00,7,100,82.25
+"Distinction","do them immediately",21,"M","Second year","DATA2002",12,"I don't currently work",0,"6-8h",1899-12-31 02:30:00,4,350,20.5
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",12,"Casual",4,"8.5",1899-12-31 10:30:00,7,50,90
+"High Distinction","do them immediately",25,"M","Second year","DATA2902",12,"Casual",12,"7.0",1899-12-31,5,60,82
+"High Distinction","draw up a schedule and work through it in planned stages",21,"F","Second year","DATA2902",10,"Part time",30,"8.0",1899-12-31 11:00:00,10,100,73
+"High Distinction","draw up a schedule and work through it in planned stages",19,"F","Second year","DATA2902",10,"Self employed",20,"9.0",1899-12-31 22:30:00,8,100,86.5
+"Distinction","cram at the last second",21,"M","Third year","DATA2902",5,"Full time",50,"6.5 hours",1899-12-31 11:00:00,12,150,70.5
+"Credit","do them immediately",23,"M","Third year","DATA2002",8,"I don't currently work",0,"8h",1899-12-31,14,400,50
+"Credit","draw up a schedule and work through it in planned stages",19,"F","First year","DATA2002",6,NA,0,"7hrs",1899-12-31 04:00:00,2,500,60
+"High Distinction","draw up a schedule and work through it in planned stages",18,"F","Second year","DATA2902",8,"I don't currently work",0,"10.0",1899-12-31 23:00:00,2,400,75
