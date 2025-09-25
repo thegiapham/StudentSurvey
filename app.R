@@ -10,10 +10,25 @@
 library(shiny)
 library(rsconnect)
 library(here) 
+library(ggplot2)
+library(RColorBrewer)
 library(shinythemes)
 
-raw = read.csv(here("raw.csv") )
-clean = read.csv(here("cleaned_data.csv"))
+
+
+
+
+clean = read.csv(here("cleaned.csv")) 
+is_categorical <- function(x) {
+  is.character(x) || is.factor(x) || n_distinct(na.omit(x)) <= 20
+}
+cat_vars <- names(clean)[vapply(clean, is_categorical, logical(1))]
+num_vars <- names(clean)[vapply(clean, is.numeric,   logical(1))]
+
+
+cat_choices <- c("target_grade", "assignment_preference")
+
+
 ui <- navbarPage(
   title = "Survey Analysis",
   theme = shinytheme("flatly"),
@@ -22,18 +37,18 @@ ui <- navbarPage(
     sidebarLayout(
       sidebarPanel(
         width = 3,
-        h4(icon("th"), "Choose variables"),
-        selectInput("ind_cat1", "Row variable",  choices = NULL),
-        selectInput("ind_cat2", "Column variable", choices = NULL),
+        h4("Choose variables"),
+        selectInput("cat1", "Row variable",  choices = cat_choices),
+        selectInput("cat2", "Column variable", choices = cat_choices),
         hr(),
-        checkboxInput("ind_expctd", "Show expected counts", FALSE)
+        checkboxInput("show_exp", "Show expected counts", FALSE)
       ),
       mainPanel(
         width = 9,
         tabsetPanel(
-          tabPanel(icon("table"), "Contingency Table",  tableOutput("ind_table")),
-          tabPanel(icon("chart-bar"), "Visualisation",   plotOutput("ind_plot")),
-          tabPanel(icon("microscope"), "Test Output",    verbatimTextOutput("ind_test"))
+          tabPanel(icon("table"), "Contingency Table",  tableOutput("chi_table")),
+          tabPanel(icon("chart-bar"), "Visualisation",   plotOutput("chi_plot")),
+          tabPanel(icon("microscope"), "Test Statistics",    verbatimTextOutput("chi_out"))
         )
       )
     )
@@ -41,8 +56,32 @@ ui <- navbarPage(
 )
 
 
-server <- function(input, output, session) {}
-
+server <- function(input, output, session) { 
+  # Independence test UI 
+  chi_data <- reactive({
+    req(input$cat1, input$cat2)
+    #validate(need(input$cat1 != input$cat2, "Choose two different variables"))
+    table(clean[[input$cat1]], clean[[input$cat2]])
+  })
+  
+  output$chi_table <- renderTable({
+    if (input$show_exp) round(chisq.test(chi_data())$expected, 1)
+    else                addmargins(chi_data())
+  }, rownames = TRUE)
+  
+  output$chi_plot <- renderPlot({
+    tab <- chi_data()
+    barplot(tab,
+            beside = TRUE,
+            col    = brewer.pal(n = nrow(tab), "Set2"),
+            legend = TRUE,
+            ylab   = "Count")
+  })
+  
+  output$chi_out <- renderPrint({
+    chisq.test(chi_data(), correct = FALSE)
+  })
+}
 
 # Run the application 
 shinyApp(ui = ui, server = server)

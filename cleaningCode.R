@@ -493,7 +493,7 @@ cl <- cl %>%
     daily_water_intake_l = map_dbl(as.character(daily_water_intake_l),
                                    clean_to_litres)
   ) 
-
+cl$target_grade <- as.factor(cl$target_grade)
 cl$commute <- sapply(cl$commute, \(x) paste(unlist(x), collapse = ", "))
 
 write.csv(cl, "cleaned.csv", row.names = FALSE)
