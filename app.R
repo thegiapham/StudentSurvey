@@ -89,11 +89,23 @@ server <- function(input, output, session) {
   
   output$chi_plot <- renderPlot({
     tab <- chi_data()
-    barplot(tab,
-            beside = TRUE,
-            col    = brewer.pal(n = nrow(tab), "Set2"),
-            legend = TRUE,
-            ylab   = "Count")
+    df <- as.data.frame(tab)
+    colnames(df) <- c("RowVar", "ColVar", "Freq")
+    
+    ggplot(df, aes(x = RowVar, y = Freq, fill = ColVar)) +
+      geom_col(position = "dodge", width = 0.7) +
+      scale_fill_brewer(palette = "Set2") +
+      labs(
+        x = input$cat1,
+        y = "Count",
+        fill = input$cat2,
+        title = paste("Distribution of", input$cat1, "by", input$cat2)
+      ) +
+      theme_minimal(base_size = 14) +
+      theme(
+        plot.title = element_text(face = "bold", hjust = 0.5),
+        axis.text.x = element_text(angle = 30, hjust = 1)
+      )
   })
   
   output$chi_out <- renderPrint({ 
