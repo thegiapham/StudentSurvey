@@ -7,7 +7,7 @@ library(stringr)
 library(forcats)
 library(gt)
 library(purrr)
-cl = read.csv(here("cleaned_data.csv"))
+cl = read.csv(here("cleaned.csv"))
 cl = cl %>% 
   #For any row that is totally empty, drop it. 
   remove_empty(c("rows", "cols")) 
@@ -374,6 +374,7 @@ cl$readable_languages <- sapply(cl$readable_languages, function(x) {
 cl$readable_languages <- ifelse(cl$readable_languages == "1.5", "1", cl$readable_languages)  
 cl$pay_rent <- cl$rent
 cl$commute <- cl$commute_clean
+cl$target_grade <- ifelse(cl$target_grade == "nan", NA, cl$target_grade)
 library(dplyr)
 
 cl <- cl %>%
@@ -496,8 +497,47 @@ cl <- cl %>%
 cl$target_grade <- as.factor(cl$target_grade)
 cl$commute <- sapply(cl$commute, \(x) paste(unlist(x), collapse = ", "))
 
-write.csv(cl, "cleaned.csv", row.names = FALSE)
 
+clean_old_age <- function(txt) {
+  txt  <- str_to_lower(txt)
+  
+  # grab every numeric token (allows decimals)
+  nums <- str_extract_all(txt, "\\d+\\.?\\d*")[[1]]
+  
+  # no numbers at all  → NA
+  if (length(nums) == 0) return(NA_real_)
+  
+  nums <- as.numeric(nums)
+  
+  # choose a single representative value
+  val <- if (length(nums) > 1) mean(nums) else nums[1]
+  
+  # if the text contains “+”, “over”, “above”, “upper”, “past”
+  if (str_detect(txt, "\\+|over|above|upper|past"))
+    return(val)                   # keep lower bound as the estimate
+  
+  val                             # default
+}
+
+cl <- cl %>% 
+  mutate(
+    perceived_old_age = map_dbl(as.character(perceived_old_age), clean_old_age)
+  )
+cl$target_grade <- recode(cl$target_grade,
+                          `2` = "d",
+                          `4` = "hd",
+                          `1` = "c",
+                          `6` = "p", 
+                          `3` = "f")
+
+# To make sure it's a factor with appropriate levels (optional)
+cl$target_grade <- factor(cl$target_grade, levels = c("c", "d", "hd", "p", "f"))
+cl$target_grade <- as.character(cl$target_grade)
+cl$target_grade[cl$target_grade == "<NA>"] <- NA
+cl$target_grade <- factor(cl$target_grade)
+str(cl$target_grade)
+unique(cl$target_grade)
+write.csv(cl, "cleaned.csv", row.names = FALSE)
 
 
 
