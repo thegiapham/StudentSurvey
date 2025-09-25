@@ -8,44 +8,41 @@
 #
 
 library(shiny)
+library(rsconnect)
+library(here) 
+library(shinythemes)
 
-# Define UI for application that draws a histogram
-ui <- fluidPage(
-
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
-
-    # Sidebar with a slider input for number of bins 
+raw = read.csv(here("raw.csv") )
+clean = read.csv(here("cleaned_data.csv"))
+ui <- navbarPage(
+  title = "Survey Analysis",
+  theme = shinytheme("flatly"),
+  tabPanel(
+    "Independence Test",
     sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-           plotOutput("distPlot")
+      sidebarPanel(
+        width = 3,
+        h4(icon("th"), "Choose variables"),
+        selectInput("ind_cat1", "Row variable",  choices = NULL),
+        selectInput("ind_cat2", "Column variable", choices = NULL),
+        hr(),
+        checkboxInput("ind_expctd", "Show expected counts", FALSE)
+      ),
+      mainPanel(
+        width = 9,
+        tabsetPanel(
+          tabPanel(icon("table"), "Contingency Table",  tableOutput("ind_table")),
+          tabPanel(icon("chart-bar"), "Visualisation",   plotOutput("ind_plot")),
+          tabPanel(icon("microscope"), "Test Output",    verbatimTextOutput("ind_test"))
         )
+      )
     )
+  )
 )
 
-# Define server logic required to draw a histogram
-server <- function(input, output) {
 
-    output$distPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+server <- function(input, output, session) {}
 
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white',
-             xlab = 'Waiting time to next eruption (in mins)',
-             main = 'Histogram of waiting times')
-    })
-}
 
 # Run the application 
 shinyApp(ui = ui, server = server)
