@@ -56,7 +56,7 @@ ui <- navbarPage(
         selectInput("cat1", "Row variable",  choices = cat_choices),
         selectInput("cat2", "Column variable", choices = cat_choices),
         hr(),
-        checkboxInput("show_exp", "Show expected counts", FALSE)
+        checkboxInput("flip_plot", "Flip coordinates", FALSE)
       ),
       mainPanel(
         width = 9,
@@ -83,8 +83,17 @@ server <- function(input, output, session) {
   })
   
   output$chi_table <- renderTable({
-    if (input$show_exp) round(chisq.test(chi_data())$expected, 1)
-    else                addmargins(chi_data())
+    validate(
+      need(input$cat1 != input$cat2, "Please choose two different variables!")
+    )
+    tab <- table(
+      clean[[input$cat1]],
+      clean[[input$cat2]],
+      useNA = "no"
+    )
+    
+    # Always return as a data.frame-like table
+    as.data.frame.matrix(tab)
   }, rownames = TRUE)
   
   output$chi_plot <- renderPlot({
@@ -92,7 +101,7 @@ server <- function(input, output, session) {
     df <- as.data.frame(tab)
     colnames(df) <- c("RowVar", "ColVar", "Freq")
     
-    ggplot(df, aes(x = RowVar, y = Freq, fill = ColVar)) +
+    p <- ggplot(df, aes(x = RowVar, y = Freq, fill = ColVar)) +
       geom_col(position = "dodge", width = 0.7) +
       scale_fill_brewer(palette = "Set2") +
       labs(
@@ -106,6 +115,10 @@ server <- function(input, output, session) {
         plot.title = element_text(face = "bold", hjust = 0.5),
         axis.text.x = element_text(angle = 30, hjust = 1)
       )
+    
+    if (input$flip_plot) p <- p + coord_flip()
+    
+    p
   })
   
   output$chi_out <- renderPrint({ 
