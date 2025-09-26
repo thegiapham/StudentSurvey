@@ -12,6 +12,7 @@ cl = cl %>%
   #For any row that is totally empty, drop it. 
   remove_empty(c("rows", "cols")) 
 cl$age <- ifelse(cl$age > 50 | is.na(cl$age) | cl$age < 10, as.integer(mean(cl$age, na.rm=TRUE)), cl$age)
+
 cl$age <- as.integer(cl$age)
 
 cl$target_grade <- ifelse(cl$target_grade == "Fail", NA, cl$target_grade)
@@ -537,6 +538,7 @@ cl$target_grade[cl$target_grade == "<NA>"] <- NA
 cl$target_grade <- factor(cl$target_grade)
 str(cl$target_grade)
 unique(cl$target_grade)
+cl$weetbix_count <- ifelse(cl$weetbix_count == 1000, 1, cl$weetbix_count)
 write.csv(cl, "cleaned.csv", row.names = FALSE)
 
 
