@@ -41,16 +41,56 @@ cat_choices <- c(
   "team_role_type",
   "university_year",
   "country_of_birth"
-)
-trim_name <- function(x, max_len = 15) {
+) 
+
+t_choices = c(
+  "age",
+  "weetbix_count", 
+  "weekly_food_spend",
+  "weekly_alcohol",
+  "height",
+  "daily_anxiety_frequency",
+  "weekly_study_hours",
+  "average_daily_sleep",
+  "sleep_schedule",
+  "sibling_count",
+  "allergy_count",
+  "random_number",
+  "favourite_number",
+  "daily_short_video_time",
+  "weekly_exercise_hours",
+  "weekly_paid_work_hours",
+  "team_role_type",
+  "fluent_languages",
+  "readable_languages",
+  "wam",
+  "shoe_size",
+  "books_read_highschool",
+  "daily_water_intake_l",
+  "shoe_size_num")
+
+
+
+# Shorten the label to fit the panel 
+trim_name <- function(x, max_len = 14) {
   ifelse(nchar(x) > max_len,
          paste0(substr(x, 1, max_len - 3), "..."),
          x)
 }
 
-make_choices <- function(vec, max_len = 15) {
+make_choices <- function(vec, max_len = 14) {
   setNames(vec, trim_name(vec, max_len))
 }
+# ----------------------------
+
+#Helper functions for QQ-plot to keep the plot placed in the center 
+symmetric_limits <- function(x, trim = 0.01, extend = 0.1) {
+  qs       <- quantile(x, probs = c(trim, 1 - trim), na.rm = TRUE)
+  max_abs  <- max(abs(qs))                 # 1 %–99 % band
+  pad      <- max_abs * extend            # slight extra margin
+  c( -max_abs - pad, max_abs + pad )
+}
+# ------------ 
 
 ui <- navbarPage(
   title = "Survey Analysis",
@@ -78,6 +118,37 @@ ui <- navbarPage(
           tabPanel(icon("table"), "Contingency Table",  tableOutput("chi_table")),
           tabPanel(icon("chart-bar"), "Visualisation",   plotOutput("chi_plot")),
           tabPanel(icon("microscope"), "Test Statistics",    verbatimTextOutput("chi_out"))
+        )
+      )
+    )
+  ), 
+  tabPanel(
+    "T-Test",
+    sidebarLayout(
+      sidebarPanel(
+        width = 3,
+        h4("Choose variables"),
+        selectInput("tt_num1", "Grouping variable (2 levels only)",
+                    choices = make_choices(t_choices)),
+        selectInput("tt_num2", "Numeric variable",
+                    choices = make_choices(t_choices)),
+        selectInput("tt_alt", "Alternative hypothesis",
+                    c("Two-sided"       = "two.sided",
+                      "Group 1 > Group 2" = "greater",
+                      "Group 1 < Group 2" = "less"))
+      ),
+      mainPanel(
+        width = 9,
+        tabsetPanel( id = "plot_tabs",
+                     
+                     tabPanel("Plots",             # parent
+                              tabsetPanel( id = "which_plot",
+                                           tabPanel("Boxplots", plotOutput("plot_boxes")),
+                                           tabPanel("QQ-plots", plotOutput("plot_qq"))
+                              )
+                     ),
+                     
+                     tabPanel("Test Output", verbatimTextOutput("tt_out"))
         )
       )
     )
@@ -152,6 +223,53 @@ server <- function(input, output, session) {
     } else {
       "Chi-square test could not be performed"
     }
+  })
+  tt_data <- reactive({
+    req(input$tt_num1, input$tt_num2)
+    na.omit(clean[c(input$tt_num1, input$tt_num2)])
+  })
+  
+  output$tt_box <- renderPlot({
+    ggplot(tt_data(),
+           aes_string(x = input$tt_num1, y = input$tt_num2)) +
+      geom_boxplot(fill = "#3498db", alpha = .6) +
+      labs(x = input$tt_num1, y = input$tt_num2) +
+      theme_minimal()
+  })
+  
+  output$plot_boxes <- renderPlot({
+    df <- tt_data()
+    
+    p1 <- ggplot(df, aes_string(y = input$tt_num1)) +
+      geom_boxplot(alpha = .6, width = .7) +
+      scale_fill_brewer(palette = "Set2", guide = "none") +
+      labs(title = input$tt_num1, x = NULL, y = NULL) +
+      theme_minimal()
+    
+    p2 <- ggplot(df, aes_string(y = input$tt_num2)) +
+      geom_boxplot(alpha = .6, width = .7) +
+      scale_fill_brewer(palette = "Set2", guide = "none") +
+      labs(title = input$tt_num2, x = NULL, y = NULL) +
+      theme_minimal()
+    
+    gridExtra::grid.arrange(p1, p2, ncol = 2)
+  })
+  
+  # 2. two QQ-plots
+  output$plot_qq <- renderPlot({
+    df <- tt_data()
+    
+    qq1 <- ggplot(df, aes(sample = .data[[input$tt_num1]])) +
+      stat_qq() + stat_qq_line(color="red ") +
+      labs(title = "QQ – Plot for variable 1") +
+      theme_minimal()
+    
+    qq2 <- ggplot(df, aes(sample = .data[[input$tt_num2]])) +
+      stat_qq() + stat_qq_line() +
+      labs(title = "QQ – Plot for variable 2") +
+      theme_minimal()
+    
+    gridExtra::grid.arrange(qq1, qq2, ncol = 2)
   })
 }
 
