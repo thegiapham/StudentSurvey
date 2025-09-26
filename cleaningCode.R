@@ -539,6 +539,7 @@ cl$target_grade <- factor(cl$target_grade)
 str(cl$target_grade)
 unique(cl$target_grade)
 cl$weetbix_count <- ifelse(cl$weetbix_count == 1000, 1, cl$weetbix_count)
+cl$wam[cl$wam < 50] <- NA
 write.csv(cl, "cleaned.csv", row.names = FALSE)
 
 
