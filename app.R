@@ -10,12 +10,6 @@ library(shinythemes)
 
 
 clean = read.csv(here("cleaned.csv")) 
-clean$target_grade
-is_categorical <- function(x) {
-  is.character(x) || is.factor(x) || n_distinct(na.omit(x)) <= 20
-}
-cat_vars <- names(clean)[vapply(clean, is_categorical, logical(1))]
-num_vars <- names(clean)[vapply(clean, is.numeric,   logical(1))]
 
 cat_choices <- c(
   "target_grade", 
@@ -71,26 +65,7 @@ t_choices = c(
 
 
 
-# Shorten the label to fit the panel 
-trim_name <- function(x, max_len = 14) {
-  ifelse(nchar(x) > max_len,
-         paste0(substr(x, 1, max_len - 3), "..."),
-         x)
-}
 
-make_choices <- function(vec, max_len = 14) {
-  setNames(vec, trim_name(vec, max_len))
-}
-# ----------------------------
-
-#Helper functions for QQ-plot to keep the plot placed in the center 
-symmetric_limits <- function(x, trim = 0.01, extend = 0.1) {
-  qs       <- quantile(x, probs = c(trim, 1 - trim), na.rm = TRUE)
-  max_abs  <- max(abs(qs))                 # 1 %–99 % band
-  pad      <- max_abs * extend            # slight extra margin
-  c( -max_abs - pad, max_abs + pad )
-}
-# ------------ 
 
 ui <- navbarPage(
   title = "Survey Analysis",
@@ -107,8 +82,8 @@ ui <- navbarPage(
       sidebarPanel(
         width = 3,
         h4("Choose variables"),
-        selectInput("cat1", "Row variable",  choices = make_choices(cat_choices)),
-        selectInput("cat2", "Column variable", choices = make_choices(cat_choices)),
+        selectInput("cat1", "Row variable",  choices = cat_choices),
+        selectInput("cat2", "Column variable", choices = cat_choices),
         hr(),
         checkboxInput("flip_plot", "Flip coordinates", FALSE)
       ),
@@ -129,9 +104,9 @@ ui <- navbarPage(
         width = 3,
         h4("Choose variables"),
         selectInput("tt_num1", "Grouping variable (2 levels only)",
-                    choices = make_choices(t_choices)),
+                    choices = t_choices),
         selectInput("tt_num2", "Numeric variable",
-                    choices = make_choices(t_choices))
+                    choices = t_choices)
       ),
       mainPanel(
         width = 9,
