@@ -42,19 +42,33 @@ cat_choices <- c(
   "university_year",
   "country_of_birth"
 )
+trim_name <- function(x, max_len = 15) {
+  ifelse(nchar(x) > max_len,
+         paste0(substr(x, 1, max_len - 3), "..."),
+         x)
+}
 
+make_choices <- function(vec, max_len = 15) {
+  setNames(vec, trim_name(vec, max_len))
+}
 
 ui <- navbarPage(
   title = "Survey Analysis",
   theme = shinytheme("flatly"),
+  header = tags$head(
+    # keep the selectize input itself from stretching horizontally
+    tags$style(HTML("
+      .selectize-input {max-width: 100%;}
+    "))
+  ),
   tabPanel(
     "Independence Test",
     sidebarLayout(
       sidebarPanel(
         width = 3,
         h4("Choose variables"),
-        selectInput("cat1", "Row variable",  choices = cat_choices),
-        selectInput("cat2", "Column variable", choices = cat_choices),
+        selectInput("cat1", "Row variable",  choices = make_choices(cat_choices)),
+        selectInput("cat2", "Column variable", choices = make_choices(cat_choices)),
         hr(),
         checkboxInput("flip_plot", "Flip coordinates", FALSE)
       ),
