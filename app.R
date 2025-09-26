@@ -4,7 +4,7 @@ library(here)
 library(ggplot2)
 library(RColorBrewer)
 library(shinythemes)
-
+library(DT)
 
 
 
@@ -90,9 +90,9 @@ ui <- navbarPage(
       mainPanel(
         width = 9,
         tabsetPanel(
-          tabPanel(icon("table"), "Contingency Table",  tableOutput("chi_table")),
-          tabPanel(icon("chart-bar"), "Visualisation",   plotOutput("chi_plot")),
-          tabPanel(icon("microscope"), "Test Statistics",    verbatimTextOutput("chi_out"))
+          tabPanel("Contingency Table",  DTOutput("chi_table")),
+          tabPanel("Visualisation",   plotOutput("chi_plot")),
+          tabPanel("Test Statistics",    uiOutput("chi_out"))
         )
       )
     )
@@ -124,9 +124,11 @@ ui <- navbarPage(
                               selectInput("tt_alt", "Test Tail", 
                               c("Two-sided" = "two.sided", 
                                 "Group 1 > Group 2" = "greater", 
-                                "Group 1 < Group 2" = "less")), 
+                                "Group 1 < Group 2" = "less")),  
+                              uiOutput("shapiro_out"), 
+                              uiOutput("test_advice"),            
                               
-                              verbatimTextOutput("tt_out"))
+                              uiOutput("tt_out"))
         )
       )
     )
@@ -145,19 +147,30 @@ server <- function(input, output, session) {
     table(df_sub[[input$cat1]], df_sub[[input$cat2]])
   })
   
-  output$chi_table <- renderTable({
-    validate(
-      need(input$cat1 != input$cat2, "Please choose two different variables!")
-    )
+  output$chi_table <- DT::renderDataTable({
+    validate(need(input$cat1 != input$cat2, "Please choose two different variables!"))
+    
     tab <- table(
       clean[[input$cat1]],
       clean[[input$cat2]],
       useNA = "no"
     )
     
-    # Always return as a data.frame-like table
-    as.data.frame.matrix(tab)
-  }, rownames = TRUE)
+    df <- as.data.frame.matrix(tab)        # rows = factor level of cat1
+    DT::datatable(df,
+                  options = list(dom = "t",                       # hide search/controls
+                                 ordering = FALSE,
+                                 pageLength = nrow(df)),
+                  rownames = TRUE) |>
+      DT::formatStyle(
+        columns = names(df),
+        backgroundColor = DT::styleColorBar(range(tab), "tomato"),   # red gradient
+        backgroundSize   = "98% 88%",
+        backgroundRepeat = "no-repeat",
+        backgroundPosition = "center"
+      ) |>
+      DT::formatStyle(columns = names(df), color = "black")          # keep text dark
+  })
   
   output$chi_plot <- renderPlot({
     tab <- chi_data()
@@ -184,24 +197,56 @@ server <- function(input, output, session) {
     p
   })
   
-  output$chi_out <- renderPrint({ 
-    tab <- chi_data() 
-    test <- tryCatch(
-      chisq.test(tab, correct = FALSE),
-      error = function(e) NULL
-    ) 
-    if (!is.null(test)) {
-      # Check if expected counts too small
-      if (any(test$expected < 5)) {
-        message("Using Monte Carlo simulation due to small expected frequencies")
-        chisq.test(tab, simulate.p.value = TRUE, B = 5000)
-      } else {
-        test
-      }
-    } else {
-      "Chi-square test could not be performed"
+  output$chi_out <- renderUI({
+    tab  <- chi_data()
+    test <- tryCatch(chisq.test(tab, correct = FALSE),
+                     error = function(e) NULL)
+    
+    if (is.null(test)) {
+      return(
+        wellPanel(
+          tags$p("Chi-square test could not be performed."),
+          style = "background:#f8d7da; border-left:5px solid #721c24;"
+        )
+      )
     }
+    
+    #  Expected-count rule
+    small_exp <- any(test$expected < 5)
+    
+    if (small_exp) {                       
+      perm     <- chisq.test(tab, simulate.p.value = TRUE, B = 5000)
+      stat_val <- unname(perm$statistic)
+      p_val    <- perm$p.value
+      method   <- "Independence test with permutation"
+      exp_note <- "<b>Note:</b> expected counts&nbsp;&lt; 5, a permutation test was performed."
+    } else {                                # classical Pearson version
+      stat_val <- unname(test$statistic)
+      p_val    <- test$p.value
+      method   <- "Chi-square test"
+      exp_note <- "<b>Note:</b> expected counts are sufficient for the standard chi-square test."
+    }
+    
+    # ---- 2. P-value interpretation ----------------------------------------
+    interp <- if (p_val < 0.05)
+      "We reject the null hypothesis — a significant association exists."
+    else
+      "We fail to reject the null hypothesis; the two variables are independent."
+    
+    # Ouutput
+    wellPanel(
+      tags$h5(strong(method)),
+      div(
+        sprintf("Observed test statistic: %.3f", stat_val), tags$br(),
+        sprintf("P-value: %.4g", p_val)
+      ),
+      div(HTML(exp_note), style = "margin-top:10px;"),
+      div(interp,          style = "margin-top:10px; font-style:italic;"),
+      style = "background:#f5faff; border-left:5px solid #17a2b8;"
+    )
   })
+  
+  
   tt_data <- reactive({
     req(input$tt_num1, input$tt_num2)
     na.omit(clean[c(input$tt_num1, input$tt_num2)])
@@ -216,7 +261,7 @@ server <- function(input, output, session) {
       scale_fill_brewer(palette = "Set2", guide = "none") +
       labs(title = input$tt_num1, x = NULL, y = NULL) +
       theme_minimal()
-    
+     
     p2 <- ggplot(df, aes_string(y = input$tt_num2)) +
       geom_boxplot(alpha = .6, width = .7) +
       scale_fill_brewer(palette = "Set2", guide = "none") +
@@ -242,18 +287,71 @@ server <- function(input, output, session) {
     
     gridExtra::grid.arrange(qq1, qq2, ncol = 2)
   }) 
-    output$tt_out <- renderPrint({ 
-      df <- tt_data() 
-      grp <- df[[input$tt_num1]]
-      num <- df[[input$tt_num2]]
-      p1 <- shapiro.test(grp)$p.value 
-      p2 <- shapiro.test(num)$p.value
-      if (p1 >= 0.05 && p2 >= 0.05) { 
-        t.test(grp, num, alternative = input$tt_alt) 
-      } else {
-        wilcox.test(grp, num, alternative = input$tt_alt) 
-      }
-    })
+  output$tt_out <- renderUI({
+    df <- tt_data()
+    g  <- df[[input$tt_num1]]
+    n  <- df[[input$tt_num2]]
+    
+    #  choose the right tesst
+    non_normal <- (shapiro.test(g)$p.value < 0.05) ||
+      (shapiro.test(n)$p.value < 0.05)
+    
+    if (non_normal) {
+      res      <- wilcox.test(g, n, alternative = input$tt_alt)
+      method   <- res$method                     # “Wilcoxon rank-sum …”
+      stat_val <- unname(res$statistic)
+      p_val    <- res$p.value
+    } else {
+      res      <- t.test(g, n, alternative = input$tt_alt)
+      method   <- res$method                     # “Welch Two-Sample t-test”
+      stat_val <- unname(res$statistic)
+      p_val    <- res$p.value
+    }
+    
+    #interpretation 
+    interp <- if (p_val < 0.05)
+      "We reject the null hypothesis — a significant difference exists between groups."
+    else
+      "We fail to reject the null hypothesis — no significant difference detected."
+    
+    # output card
+    wellPanel(
+      tags$h5(strong(method)),
+      div(
+        sprintf("Observed test statistic: %.3f", stat_val), tags$br(),
+        sprintf("P-value: %.4g", p_val)
+      ),
+      div(interp, style = "margin-top:10px; font-style:italic;"),
+      style = "background:#f5faff; border-left:5px solid #17a2b8;"
+    )
+  })
+  output$shapiro_out <- renderUI({
+    df <- tt_data()
+    p1 <- shapiro.test(df[[input$tt_num1]])$p.value
+    p2 <- shapiro.test(df[[input$tt_num2]])$p.value
+    
+    wellPanel(
+      tags$h4("Shapiro-Wilk Normality Test"),
+      tags$p(sprintf("P-value for %s: %.4f", input$tt_num1, p1)),
+      tags$p(sprintf("P-value for %s: %.4f", input$tt_num2, p2)),
+      style = "background:#fff3cd; border-left:5px solid #856404;"
+    )
+  })
+  
+    # Advisory message: which test will run
+  output$test_advice <- renderUI({
+    df <- tt_data()
+    p1 <- shapiro.test(df[[input$tt_num1]])$p.value
+    p2 <- shapiro.test(df[[input$tt_num2]])$p.value
+    
+    advice_html <- if (p1 < 0.05 || p2 < 0.05)
+      "<b>Note:</b> normality failed for at least one group &nbsp;→&nbsp; Wilcoxon rank-sum test will be used."
+    else
+      "<b>Note:</b> both groups passed normality &nbsp;→&nbsp; Welch’s t-test will be used."
+    
+    # 20 px bottom margin creates the gap
+    div(HTML(advice_html), style = "margin-bottom:20px;")
+  })
 }
 
 # Run the application 
