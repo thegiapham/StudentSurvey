@@ -1,4 +1,9 @@
 # DATA2902 - tpha0822 
+
+## Link 
+  - github repo: https://github.sydney.edu.au/tpha0822/DATA2902.git 
+  - shinyapps link: https://tpha0822.shinyapps.io/CompleteApp/
+
 This Shiny application lets you **explore a cleaned survey dataset** without writing any R code.  
 It focuses on two common inferential questions:
 
