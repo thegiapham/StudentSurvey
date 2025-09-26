@@ -23,7 +23,7 @@ It focuses on two common inferential questions:
     - Side-by-side boxplots.  
     - Dual QQ-plots with red reference lines; x-axis kept symmetric so outliers don’t push the bulk off-centre.  
   - **Test Output**  
-    - Choose tail (`two.sided`, `greater`, `less`).  
+    - Choose one of the tails (`two.sided`, `greater`, `less`).  
     - App runs **Shapiro–Wilk** normality tests on each sample.  
       • Both normal → `t.test()`  
       • Otherwise → `wilcox.test()`  
