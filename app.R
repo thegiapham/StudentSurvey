@@ -131,11 +131,7 @@ ui <- navbarPage(
         selectInput("tt_num1", "Grouping variable (2 levels only)",
                     choices = make_choices(t_choices)),
         selectInput("tt_num2", "Numeric variable",
-                    choices = make_choices(t_choices)),
-        selectInput("tt_alt", "Alternative hypothesis",
-                    c("Two-sided"       = "two.sided",
-                      "Group 1 > Group 2" = "greater",
-                      "Group 1 < Group 2" = "less"))
+                    choices = make_choices(t_choices))
       ),
       mainPanel(
         width = 9,
@@ -148,7 +144,14 @@ ui <- navbarPage(
                               )
                      ),
                      
-                     tabPanel("Test Output", verbatimTextOutput("tt_out"))
+                     tabPanel("Test Output", 
+                              br(), 
+                              selectInput("tt_alt", "Test Tail", 
+                              c("Two-sided" = "two.sided", 
+                                "Group 1 > Group 2" = "greater", 
+                                "Group 1 < Group 2" = "less")), 
+                              
+                              verbatimTextOutput("tt_out"))
         )
       )
     )
@@ -229,13 +232,6 @@ server <- function(input, output, session) {
     na.omit(clean[c(input$tt_num1, input$tt_num2)])
   })
   
-  output$tt_box <- renderPlot({
-    ggplot(tt_data(),
-           aes_string(x = input$tt_num1, y = input$tt_num2)) +
-      geom_boxplot(fill = "#3498db", alpha = .6) +
-      labs(x = input$tt_num1, y = input$tt_num2) +
-      theme_minimal()
-  })
   
   output$plot_boxes <- renderPlot({
     df <- tt_data()
@@ -265,12 +261,24 @@ server <- function(input, output, session) {
       theme_minimal()
     
     qq2 <- ggplot(df, aes(sample = .data[[input$tt_num2]])) +
-      stat_qq() + stat_qq_line() +
+      stat_qq() + stat_qq_line(color="red") +
       labs(title = "QQ – Plot for variable 2") +
       theme_minimal()
     
     gridExtra::grid.arrange(qq1, qq2, ncol = 2)
-  })
+  }) 
+    output$tt_out <- renderPrint({ 
+      df <- tt_data() 
+      grp <- df[[input$tt_num1]]
+      num <- df[[input$tt_num2]]
+      p1 <- shapiro.test(grp)$p.value 
+      p2 <- shapiro.test(num)$p.value
+      if (p1 >= 0.05 && p2 >= 0.05) { 
+        t.test(grp, num, alternative = input$tt_alt) 
+      } else {
+        wilcox.test(grp, num, alternative = input$tt_alt) 
+      }
+    })
 }
 
 # Run the application 
