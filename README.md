@@ -1,4 +1,4 @@
-# DATA2902 - tpha0822 
+Academic Performance in aliance with life style
 
 ## Link 
   - github repo: https://github.sydney.edu.au/tpha0822/DATA2902.git 
